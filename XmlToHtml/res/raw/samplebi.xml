@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="1.1">
+	<section label="Details of Life Assured" id="section1" key="lifeAssured" type="dynamic" visible="true">
+		<row>
+			<columns>
+				<column id="column1" label="Name" type="label" required="true">
+					<value/>
+					<validations/>
+				</column>
+				<column id="column2" label="First" type="text" required="true" name="name1" tooltip="This is quick tip for first name">
+					<value/>
+					<validations>
+						<maxLength>30</maxLength>
+						<minLength>4</minLength>
+						<dataType>alpha</dataType>
+						<dependencies/>
+						<scripts/>
+					</validations>
+				</column>
+				<column id="column3" label="Middle" type="text" name="name2" tooltip="This is quick tip for middle name">
+					<value/>
+					<validations>
+						<maxLength>30</maxLength>
+						<minLength>4</minLength>
+						<dataType>alpha</dataType>
+						<dependencies/>
+						<scripts/>
+					</validations>
+				</column>
+				<column id="column4" label="Last" type="text" required="true" name="name3" tooltip="This is quick tip for last name">
+					<value/>
+					<validations>
+						<maxLength>30</maxLength>
+						<minLength>4</minLength>
+						<dataType>alpha</dataType>
+						<dependencies/>
+						<scripts/>
+					</validations>
+				</column>
+			</columns>
+		</row>
+		<row>
+			<columns>
+				<column id="column5" label="Gender" type="label" required="true">
+					<value/>
+					<validations/>
+				</column>
+				<column id="column6" type="radio" name="gender1" required="true" tooltip="This is quick tip for gender">
+					<value/>
+					<validations/>
+					<items>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</items>
+				</column>
+				<column id="column7" label="Date of Birth" type="label" required="true">
+					<value/>
+					<validations/>
+				</column>
+				<column id="column8" label="Date of Birth" type="text" name="name8" picker="true" required="true" tooltip="This is quick tip for Date of Birth">
+					<value/>
+					<validations>
+						<maxLength/>
+						<minLength/>
+						<dataType/>
+						<dependencies>
+								</dependencies>
+						<scripts/>
+					</validations>
+				</column>
+			</columns>
+		</row>
+		<row>
+			<columns>
+				<column id="column11" label="Email" type="label" required="true">
+					<value/>
+					<validations/>
+				</column>
+				<column id="column12" label="Email" type="text" required="true" name="name9" tooltip="This is quick tip for Email">
+					<value/>
+					<validations>
+						<maxLength>30</maxLength>
+						<minLength>4</minLength>
+						<dataType>email</dataType>
+						<dependencies/>
+						<scripts/>
+					</validations>
+				</column>
+				<column id="column13" label="Mobile No" type="label">
+					<value/>
+					<validations/>
+				</column>
+				<column id="column14" label="Mobile No" type="text" required="true" name="name11" tooltip="This is quick tip for mobile number">
+					<value/>
+					<validations>
+						<maxLength>10</maxLength>
+						<minLength>10</minLength>
+						<dataType>mobile</dataType>
+						<dependencies/>
+						<scripts/>
+					</validations>
+				</column>
+			</columns>
+		</row>
+	</section>
+	<section label="" id="section2" key="" type="static" visible="true">
+		<row>
+			<columns>
+				<column id="column15" type="checkbox" required="true" label="Check if LA is same as Proposer" name="name12" tooltip="This is quick tip for Check if LA is same as Proposer">
+					<value>true</value>
+					<validations>
+						<dependencies>
+							<dependency>
+								<lValue>column2</lValue>
+								<operator>COPY</operator>
+								<rValue>column16</rValue>
+							</dependency>
+							<dependency>
+								<lValue>column3</lValue>
+								<operator>COPY</operator>
+								<rValue>column17</rValue>
+							</dependency>
+							<dependency>
+								<lValue>column4</lValue>
+								<operator>COPY</operator>
+								<rValue>column18</rValue>
+							</dependency>
+							<dependency>
+								<lValue>column12</lValue>
+								<operator>COPY</operator>
+								<rValue>column26</rValue>
+							</dependency>
+							<dependency>
+								<lValue>column14</lValue>
+								<operator>COPY</operator>
+								<rValue>column28</rValue>
+							</dependency>
+							<dependency>
+								<lValue>column8</lValue>
+								<operator>COPY</operator>
+								<rValue>column22</rValue>
+							</dependency>
+							<dependency>
+								<lValue>column9</lValue>
+								<operator>COPY</operator>
+								<rValue>column23</rValue>
+							</dependency>
+							<dependency>
+								<lValue>column10</lValue>
+								<operator>COPY</operator>
+								<rValue>column24</rValue>
+							</dependency>
+							<dependency>
+								<lValue>gender1</lValue>
+								<operator>COPY</operator>
+								<rValue>gender2</rValue>
+							</dependency>
+						</dependencies>
+						<scripts>
+								</scripts>
+					</validations>
+				</column>
+			</columns>
+		</row>
+	</section>
+	<section label="Details of Proposer" key="proposar" id="section3" type="dynamic" visible="true">
+		<row>
+			<columns>
+				<column id="column56" label="Name" type="label" required="true">
+					<value/>
+					<validations/>
+				</column>
+				<column id="column16" label="First" type="text" required="true" name="name13" tooltip="This is quick tip for first name">
+					<value/>
+					<validations>
+						<maxLength>30</maxLength>
+						<minLength>4</minLength>
+						<dataType>alpha</dataType>
+						<dependencies/>
+						<scripts/>
+					</validations>
+				</column>
+				<column id="column17" label="Middle" type="text" name="name14" tooltip="This is quick tip for middle name">
+					<value/>
+					<validations>
+						<maxLength>30</maxLength>
+						<minLength>4</minLength>
+						<dataType>alpha</dataType>
+						<dependencies/>
+						<scripts>
+								</scripts>
+					</validations>
+				</column>
+				<column id="column18" label="Last" type="text" required="true" name="name15" tooltip="This is quick tip for last name">
+					<value/>
+					<validations>
+						<maxLength>30</maxLength>
+						<minLength>4</minLength>
+						<dataType>alpha</dataType>
+						<dependencies/>
+						<scripts/>
+					</validations>
+				</column>
+			</columns>
+		</row>
+		<row>
+			<columns>
+				<column id="column19" label="Gender" type="label" required="true">
+					<value/>
+					<validations/>
+				</column>
+				<column id="column20" type="radio" name="gender2" tooltip="This is quick tip for gender">
+					<value/>
+					<validations/>
+					<items>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</items>
+				</column>
+				<column id="column21" label="Date of Birth" type="label" required="true">
+					<value/>
+					<validations/>
+				</column>
+				<column id="column22" label="Date of Birth" type="text" name="name22" picker="true" required="true" tooltip="This is quick tip for Date of Birth">
+					<value/>
+					<validations>
+						<maxLength/>
+						<minLength/>
+						<dataType/>
+						<dependencies>
+								</dependencies>
+						<scripts/>
+					</validations>
+				</column>
+			</columns>
+		</row>
+		<row>
+			<columns>
+				<column id="column25" label="Email" type="label" required="true">
+					<value/>
+					<validations/>
+				</column>
+				<column id="column26" label="Email" type="text" required="true" name="name19" tooltip="This is quick tip for Email">
+					<value/>
+					<validations>
+						<maxLength>30</maxLength>
+						<minLength>4</minLength>
+						<dataType>email</dataType>
+						<dependencies/>
+						<scripts/>
+					</validations>
+				</column>
+				<column id="column27" label="Mobile No" type="label" required="true">
+					<value/>
+					<validations/>
+				</column>
+				<column id="column28" label="Mobile No" type="text" required="true" name="name20" tooltip="This is quick tip for mobile no">
+					<value/>
+					<validations>
+						<maxLength>10</maxLength>
+						<minLength>10</minLength>
+						<dataType>mobile</dataType>
+						<dependencies/>
+						<scripts/>
+					</validations>
+				</column>
+			</columns>
+		</row>
+	</section>
+</product>
